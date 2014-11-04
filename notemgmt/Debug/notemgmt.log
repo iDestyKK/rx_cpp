@@ -1,0 +1,27 @@
+﻿Build started 2014/11/04 16:03:22.
+     1>Project "C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\notemgmt\notemgmt.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\notemgmt.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\clara\skydrive\ide\visual studio 2010\projects\rx_cpp\notemgmt\classes.h(66): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\clara\skydrive\ide\visual studio 2010\projects\rx_cpp\notemgmt\classes.h(96): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\clara\skydrive\ide\visual studio 2010\projects\rx_cpp\notemgmt\classes.h(219): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\clara\skydrive\ide\visual studio 2010\projects\rx_cpp\notemgmt\main.cpp(24): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\notemgmt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.lib" /MACHINE:X86 /DLL Debug\main.obj
+            Creating library C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.lib and object C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.exp
+         notemgmt.vcxproj -> C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Debug\notemgmt.dll;#2" /manifest Debug\notemgmt.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\notemgmt.unsuccessfulbuild".
+         Touching "Debug\notemgmt.lastbuildstate".
+     1>Done Building Project "C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\notemgmt\notemgmt.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.26

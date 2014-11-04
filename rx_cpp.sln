@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "notemgmt", "notemgmt\notemgmt.vcxproj", "{1CBD0B2F-B39E-45AF-AACC-DA9895CE7CE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sxen", "sxen\sxen.vcxproj", "{57842A88-7DD1-4557-B6EB-D0F4D24B2247}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "songmgmt", "songmgmt\songmgmt.vcxproj", "{0F314464-AB99-4F49-A21D-06A3BB394709}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CBD0B2F-B39E-45AF-AACC-DA9895CE7CE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1CBD0B2F-B39E-45AF-AACC-DA9895CE7CE1}.Debug|Win32.Build.0 = Debug|Win32
+		{1CBD0B2F-B39E-45AF-AACC-DA9895CE7CE1}.Release|Win32.ActiveCfg = Release|Win32
+		{1CBD0B2F-B39E-45AF-AACC-DA9895CE7CE1}.Release|Win32.Build.0 = Release|Win32
+		{57842A88-7DD1-4557-B6EB-D0F4D24B2247}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57842A88-7DD1-4557-B6EB-D0F4D24B2247}.Debug|Win32.Build.0 = Debug|Win32
+		{57842A88-7DD1-4557-B6EB-D0F4D24B2247}.Release|Win32.ActiveCfg = Release|Win32
+		{57842A88-7DD1-4557-B6EB-D0F4D24B2247}.Release|Win32.Build.0 = Release|Win32
+		{0F314464-AB99-4F49-A21D-06A3BB394709}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0F314464-AB99-4F49-A21D-06A3BB394709}.Debug|Win32.Build.0 = Debug|Win32
+		{0F314464-AB99-4F49-A21D-06A3BB394709}.Release|Win32.ActiveCfg = Release|Win32
+		{0F314464-AB99-4F49-A21D-06A3BB394709}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
