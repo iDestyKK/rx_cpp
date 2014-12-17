@@ -100,7 +100,7 @@ bool string_songcompare(song a, song b) {
 	return toupperstr(a.getName()) < toupperstr(b.getName());
 }
 
-vector<song> entries;
+vector< vector<song> > entries;
 vector<song> display;
 
 void sortByArtist(vector<song> &entries, vector<song> &output) {
@@ -115,7 +115,6 @@ void sortByArtist(vector<song> &entries, vector<song> &output) {
 		if (entries[i].getArtist() != cur_name) {
 			//Add a separator first.
 			output.push_back(song(entries[i].getArtist()));
-
 		}
 
 		cur_name = entries[i].getArtist();
@@ -163,165 +162,93 @@ void sortByArtistOld(vector<song> &entries, vector<song> &output) {
 	}
 }
 
-GMEXPORT double addSong(char* a, char* b, char* c, double d, char* e) {
+GMEXPORT double addSong(char* a, char* b, char* c, double d, char* e, int list_id) {
 	//a - Song Name
 	//b - Artist
 	//c - Album
 	//d - Year
 	//e - Genre
-	entries.push_back(song(a, b, c, d, e));
+	entries[list_id].push_back(song(a, b, c, d, e));
 	return 0;
 }
 
-GMEXPORT double addSongGML() {
+GMEXPORT double addSongGML(double list_id) {
 	//a - Song Name
 	//b - Artist
 	//c - Album
 	//d - Year
 	//e - Genre
-	entries.push_back(song());
+	entries[list_id].push_back(song());
 	return 0;
 }
 
 //Get Functions
 //NOTE: I "would" add overwrite support for the already listed entries but there is no point in it.
 //Feel free to add it in if you want.
-GMEXPORT double setSongName(double a, char* b) {
-	entries[a].setName(b);
+GMEXPORT double setSongName    (double a, char*  b, double list_id) { entries[list_id][a].setName    (b); return 0; }
+GMEXPORT double setSongArtist  (double a, char*  b, double list_id) { entries[list_id][a].setArtist  (b); return 0; }
+GMEXPORT double setSongAlbum   (double a, char*  b, double list_id) { entries[list_id][a].setAlbum   (b); return 0; }
+GMEXPORT double setSongYear    (double a, double b, double list_id) { entries[list_id][a].setYear    (b); return 0; }
+GMEXPORT double setSongType    (double a, double b, double list_id) { entries[list_id][a].setType    (b); return 0; }
+GMEXPORT double setSongGenre   (double a, char*  b, double list_id) { entries[list_id][a].setGenre   (b); return 0; }
+GMEXPORT double setSongLength  (double a, double b, double list_id) { entries[list_id][a].setLength  (b); return 0; }
+GMEXPORT double setSongAlbumArt(double a, double b, double list_id) { entries[list_id][a].setAlbumArt(b); return 0; }
+GMEXPORT double setSongComment (double a, char*  b, double list_id) { entries[list_id][a].setComment (b); return 0; }
+GMEXPORT double setSongPath    (double a, char*  b, double list_id) { entries[list_id][a].setPath    (b); return 0; }
+
+GMEXPORT double listClear() {
+	entries.clear();
+	display.clear();
 	return 0;
 }
 
-GMEXPORT double setSongArtist(double a, char* b) {
-	entries[a].setArtist(b);
+//These are the Get Entry Functions
+GMEXPORT const char* getSongName_Entry    (double a, double list_id) { tmp = entries[list_id][a].getName(); return tmp.c_str(); }
+GMEXPORT const char* getSongArtist_Entry  (double a, double list_id) { tmp = entries[list_id][a].getArtist(); return tmp.c_str(); }
+GMEXPORT const char* getSongAlbum_Entry   (double a, double list_id) { tmp = entries[list_id][a].getAlbum(); return tmp.c_str(); }
+GMEXPORT double      getSongYear_Entry    (double a, double list_id) { return entries[list_id][a].getYear(); }
+GMEXPORT const char* getSongGenre_Entry   (double a, double list_id) { tmp = entries[list_id][a].getGenre(); return tmp.c_str(); }
+GMEXPORT double      getSongType_Entry    (double a, double list_id) { return entries[list_id][a].getType(); }
+GMEXPORT double      getSongLength_Entry  (double a, double list_id) { return entries[list_id][a].getLength(); }
+GMEXPORT const char* getSongComment_Entry (double a, double list_id) { return entries[list_id][a].getComment().c_str(); }
+GMEXPORT const char* getSongPath_Entry    (double a, double list_id) { return entries[list_id][a].getPath().c_str(); }
+GMEXPORT double      getSongAlbumArt_Entry(double a, double list_id) { return entries[list_id][a].getAlbumArt(); }
+GMEXPORT double      getCount_Entry       (double list_id) { return (double)entries[list_id].size(); }
+
+//These are the Set Display Functions
+GMEXPORT const char* getSongName_Display    (double a) { tmp = display[a].getName(); return tmp.c_str(); }
+GMEXPORT const char* getSongArtist_Display  (double a) { tmp = display[a].getArtist(); return tmp.c_str(); }
+GMEXPORT const char* getSongAlbum_Display   (double a) { tmp = display[a].getAlbum(); return tmp.c_str(); }
+GMEXPORT double      getSongYear_Display    (double a) { return display[a].getYear(); }
+GMEXPORT const char* getSongGenre_Display   (double a) { tmp = display[a].getGenre(); return tmp.c_str(); }
+GMEXPORT double      getSongType_Display    (double a) { return display[a].getType(); }
+GMEXPORT double      getSongLength_Display  (double a) { return display[a].getLength();}
+GMEXPORT const char* getSongComment_Display (double a) { return display[a].getComment().c_str(); }
+GMEXPORT const char* getSongPath_Display    (double a) { return display[a].getPath().c_str(); }
+GMEXPORT double      getSongAlbumArt_Display(double a) { return display[a].getAlbumArt(); }
+GMEXPORT double      getCount_Display       (        ) { return (double)display.size(); }
+
+GMEXPORT double      getCount_Entries       (        ) { return (double)entries.size(); }
+
+GMEXPORT double addToEntries() {
+	entries.resize(entries.size() + 1); //Let STL handle it... I'm seriously too lazy right now.
 	return 0;
 }
 
-GMEXPORT double setSongAlbum(double a, char* b) {
-	entries[a].setAlbum(b);
-	return 0;
-}
-
-GMEXPORT double setSongYear(double a, double b) {
-	entries[a].setYear(b);
-	return 0;
-}
-
-GMEXPORT double setSongGenre(double a, char* b) {
-	entries[a].setGenre(b);
-	return 0;
-}
-
-GMEXPORT double setSongLength(double a, double b) {
-	entries[a].setLength(b);
-	return 0;
-}
-
-GMEXPORT double setSongAlbumArt(double a, double b) {
-	entries[a].setAlbumArt(b);
-	return 0;
-}
-
-GMEXPORT double setSongComment(double a, char* b) {
-	entries[a].setComment(b);
-	return 0;
-}
-
-GMEXPORT double setSongPath(double a, char* b) {
-	entries[a].setPath(b);
-	return 0;
-}
-
-GMEXPORT const char* getSongName(double a, double b) {
-	if (b)
-		tmp = display[a].getName();
-	else
-		tmp = entries[a].getName();
-	return tmp.c_str();
-}
-
-GMEXPORT const char* getSongArtist(double a, double b) {
-	if (b)
-		tmp = display[a].getArtist();
-	else
-		tmp = entries[a].getArtist();
-	return tmp.c_str();
-}
-
-GMEXPORT const char* getSongAlbum(double a, double b) {
-	if (b)
-		tmp = display[a].getAlbum();
-	else
-		tmp = entries[a].getAlbum();
-	return tmp.c_str();
-}
-
-GMEXPORT double getSongYear(double a, double b) {
-	if (b)
-		return display[a].getYear();
-	else
-		return entries[a].getYear();
-}
-
-GMEXPORT const char* getSongGenre(double a, double b) {
-	if (b)
-		tmp = display[a].getGenre();
-	else
-		tmp = entries[a].getGenre();
-	return tmp.c_str();
-}
-
-GMEXPORT double getSongType(double a, double b) {
-	if (b)
-		return display[a].getType();
-	else
-		return entries[a].getType();
-}
-
-GMEXPORT double getSongLength(double a, double b) {
-	if (b)
-		return display[a].getLength();
-	else
-		return entries[a].getLength();
-}
-
-GMEXPORT const char* getSongComment(double a, double b) {
-	if (b)
-		return display[a].getComment().c_str();
-	else
-		return entries[a].getComment().c_str();
-}
-
-GMEXPORT const char* getSongPath(double a, double b) {
-	if (b)
-		return display[a].getPath().c_str();
-	else
-		return entries[a].getPath().c_str();
-}
-
-GMEXPORT double getSongAlbumArt(double a, double b) {
-	if (b)
-		return display[a].getAlbumArt();
-	else
-		return entries[a].getAlbumArt();
-}
-
-GMEXPORT double getCount(double a) {
-	if (a)
-		return (double)display.size();
-	else
-		return (double)entries.size();
-}
-
-GMEXPORT double sortList(double a) {
+GMEXPORT double sortList(double a, double list_id) {
 	//a - method
 	switch ((int)a) {
+		case -1:
+			//No Sorting...
+			display = entries[list_id];
+			break;
 		case 0:
 			//Sort by Artist... which I was going to do anyways.
-			sortByArtist(entries, display);
+			sortByArtist(entries[list_id], display);
 			break;
 		case 1:
 			//Sort by Artist... which I was going to do anyways.
-			sortBySong(entries, display);
+			sortBySong(entries[list_id], display);
 			break;
 	}
 	return 0;

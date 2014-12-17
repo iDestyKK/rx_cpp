@@ -1,5 +1,5 @@
-﻿Build started 2014/11/04 16:13:56.
-     1>Project "C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\songmgmt\songmgmt.vcxproj" on node 2 (build target(s)).
+﻿Build started 2014/12/14 (日) 18:59:16.
+     1>Project "E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\songmgmt\songmgmt.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\songmgmt.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
@@ -7,54 +7,81 @@
          songmgmt.cpp
      1>songmgmt.cpp(17): warning C4018: '<' : signed/unsigned mismatch
      1>songmgmt.cpp(114): warning C4018: '<' : signed/unsigned mismatch
-     1>songmgmt.cpp(136): warning C4018: '<' : signed/unsigned mismatch
-     1>songmgmt.cpp(154): warning C4018: '<' : signed/unsigned mismatch
-     1>songmgmt.cpp(172): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(135): warning C4018: '<' : signed/unsigned mismatch
+     1>songmgmt.cpp(153): warning C4018: '<' : signed/unsigned mismatch
+     1>songmgmt.cpp(171): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(181): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(188): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(188): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(189): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(189): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
      1>songmgmt.cpp(190): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(190): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(191): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(191): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(191): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(192): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(192): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(192): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(193): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(193): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(194): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(194): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(194): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
      1>songmgmt.cpp(195): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(200): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(205): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(205): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(195): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(195): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(196): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(196): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(197): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(197): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(206): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(206): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(207): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(207): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(208): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(208): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(209): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(209): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
      1>songmgmt.cpp(210): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(210): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(211): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(211): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(212): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(212): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(213): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(213): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(214): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(214): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
      1>songmgmt.cpp(215): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(215): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(215): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(216): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(219): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
      1>songmgmt.cpp(220): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(220): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>songmgmt.cpp(221): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(222): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(223): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(224): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
      1>songmgmt.cpp(225): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(230): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(236): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(238): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(244): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(246): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(252): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(254): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(260): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(262): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(267): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(269): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(275): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(277): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(282): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(284): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(289): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(291): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(296): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(298): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(303): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
-     1>songmgmt.cpp(305): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(226): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(227): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(228): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(243): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(247): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>songmgmt.cpp(251): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\songmgmt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.lib" /MACHINE:X86 /DLL Release\songmgmt.obj
-            Creating library C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.lib and object C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.exp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\songmgmt.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.lib" /MACHINE:X86 /DLL Release\songmgmt.obj
+            Creating library E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.lib and object E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.exp
          Generating code
          Finished generating code
-         songmgmt.vcxproj -> C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll
+         songmgmt.vcxproj -> E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll;#2" /manifest Release\songmgmt.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\Release\songmgmt.dll;#2" /manifest Release\songmgmt.dll.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Release\songmgmt.unsuccessfulbuild".
          Touching "Release\songmgmt.lastbuildstate".
-     1>Done Building Project "C:\Users\Clara\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\songmgmt\songmgmt.vcxproj" (build target(s)).
+     1>Done Building Project "E:\Users\idest_000\SkyDrive\IDE\Visual Studio 2010\Projects\rx_cpp\songmgmt\songmgmt.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.09
+Time Elapsed 00:00:02.07
